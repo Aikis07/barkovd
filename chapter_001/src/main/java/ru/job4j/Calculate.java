@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Package for calculate task.
 *
 * @author Danila Barkov (mailto:danila.barkov@gmail.com)
@@ -6,7 +6,10 @@
 * @since 0.1
 */
 package ru.job4j;
-
+/**
+* Class.
+* @throws Calculate
+*/
 public class Calculate {
 	/**
 	* Main.
