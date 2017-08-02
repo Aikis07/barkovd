@@ -4,8 +4,6 @@ import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 
 /**
 * Test.
@@ -17,7 +15,7 @@ import java.io.PrintStream;
 
 public class CalculatorTest {
 	/**
-* Test add.
+* Метод проверяет сложение.
 */
     @Test
     public void whenAddOnePlusOneThenTwo() {
@@ -27,6 +25,11 @@ public class CalculatorTest {
         double expected = 2D;
         assertThat(result, is(expected));
     }
+	/**
+	* Метод проверяет вычитание.
+	*
+	*
+	*/
 	public void whenAddOneMinusOneThenZero() {
         Calculator calc = new Calculator();
         calc.add2(1D, 1D);
@@ -34,6 +37,11 @@ public class CalculatorTest {
         double expected = 2D;
         assertThat(result, is(expected));
     }
+	/**
+	* Метод проверяет умножение.
+	*
+	*
+	*/
 	public void whenAddOneMultiplyOneThenOne() {
         Calculator calc = new Calculator();
         calc.add3(1D, 1D);
@@ -41,6 +49,11 @@ public class CalculatorTest {
         double expected = 2D;
         assertThat(result, is(expected));
     }
+	/**
+	* Метод проверяет деление.
+	*
+	*
+	*/
 	public void whenAddOneDivideOneThenOne() {
         Calculator calc = new Calculator();
         calc.add4(1D, 1D);
