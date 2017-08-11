@@ -28,7 +28,7 @@ public class Triangle {
      * @return расстояние между точками left и right.
      */
     public double distance(Point left, Point right) {
-        return Math.sqrt(Math.pow(this.b.getX() - this.a.getX(), 2)) + (Math.pow(this.b.getY() - this.a.getY(), 2));
+        return Math.sqrt(Math.pow(left.getX() - right.getX(), 2) + (Math.pow(left.getY() - right.getY(), 2)));
     }
 
     /**
@@ -65,7 +65,7 @@ public class Triangle {
         double bc = this.distance(this.b, this.c);
         double p = this.period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
-            Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
+            rsl = Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
         }
         return rsl;
     }
@@ -81,6 +81,6 @@ public class Triangle {
      * @return
      */
     private boolean exist(double ab, double ac, double bc) {
-        return false;
+        return true;
     }
 }
