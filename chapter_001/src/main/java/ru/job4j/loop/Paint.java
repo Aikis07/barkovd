@@ -22,7 +22,6 @@ public class Paint {
             }
             builder.append(System.getProperty("line.separator"));
         }
-        String complitedString = builder.toString();
-        return complitedString;
+        return builder.toString();
     }
 }
