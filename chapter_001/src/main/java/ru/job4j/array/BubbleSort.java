@@ -1,3 +1,12 @@
+/**
+ * Сортировка массива пузырьковым алгоритмом.
+ *
+ * @author Danila Barkov (danila.barkov@gmail.com)
+ * @version $Id$
+ * @since 0.1
+ */
+
+
 package ru.job4j.array;
 
 public class BubbleSort {
